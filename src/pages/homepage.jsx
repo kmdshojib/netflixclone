@@ -13,7 +13,7 @@ class Home extends React.Component {
             <div>
                 <HeaderContainer>
                     <Feature>
-                        <Feature.Title>Unlimited film, TV programmes and more.</Feature.Title>
+                        <Feature.Title>Unlimited movies, TV shows, and more.</Feature.Title>
                         <Feature.SubTitle>Watch anywhere. Cancel at any time.</Feature.SubTitle>
                         <OptForm>
                         <OptForm.BigDisplay>

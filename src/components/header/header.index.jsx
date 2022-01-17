@@ -1,12 +1,16 @@
 import React from 'react';
 import { Container,Background,Logo,ButtonLink } from './styles/header.styles';
 
+
+
 import { Link } from 'react-router-dom';
 
 const Header = ({bg=true, children, ...otherProps}) => {
-    return ( 
-        bg ? <Background {...otherProps}>{children}</Background> :children
-     );
+   return bg ? (
+       <Background {...otherProps}>{children}</Background>
+   ) : (
+       children
+   )
 }
  
 Header.Frame = function HeaderFrame({children, ...otherProps}){

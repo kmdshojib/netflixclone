@@ -21,12 +21,12 @@ const SignIn = () => {
 
       // firebase work here
 
-      firebase
+      return firebase
         .auth()
         .signInWithEmailAndPassword(emailAddress, password)
         .then(() => {
           //push to the browse page
-          history.push(ROUTES.BROWSE)
+          history(ROUTES.BROWSE)
         })
         .catch((error) => {
           setEmailAddress('')
@@ -52,11 +52,11 @@ const SignIn = () => {
                     onChange={({ target }) => setEmailAddress(target.value)}
                   />
                   <Form.Input 
-                    autocomplete = "off"
-                    type="password"
-                    placeholder="Password"
-                    Value={password}
-                    onChange={({ target }) => setPassword(target.value)}
+                   type="password"
+                   value={password}
+                   autoComplete="off"
+                   placeholder="Password"
+                   onChange={({ target }) => setPassword(target.value)}
                   />
                   <Form.Submit disabled={isInvalid} type="submit">Sign In</Form.Submit>
 

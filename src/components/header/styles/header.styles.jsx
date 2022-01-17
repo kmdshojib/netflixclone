@@ -1,14 +1,12 @@
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
+import background from '../../../assets/bg/home-bg.jpg'
 
-// background-image: url("../../../assets/Image/HomeImage/home-bg.jpg")top left / cover no-repeat
-// background-image: url(${({ src }) => (src ? '../../../assets/Image/HomeImage/home-bg.jpg' : `../../../assets/Image/HomeImage/${src}.jpg` )}) top left / cover
-//     no-repeat !important;
 
 export const Background = styled.div`  
     display: flex;
     flex-direction: column;
-    background-image: url("../../../assets/Image/HomeImage/home-bg.jpg")
+    background-image:url(${background});
 `
 
 
